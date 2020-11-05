@@ -1,0 +1,33 @@
+{
+  "plugins": ["prettier", "react", "react-hooks"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+    "react-app"
+  ],
+  "rules": {
+    "import/no-anonymous-default-export": 0,
+    "no-console": 0,
+    "no-set-state": 0,
+    "prettier/prettier": "error",
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": ["CustomInputLabel"],
+        "labelAttributes": ["label"],
+        "controlComponents": ["CustomInput"],
+        "depth": 3
+      }
+    ],
+    "jsx-a11y/label-has-for": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-wrap-multilines": [
+      "error",
+      { "declaration": false, "assignment": false }
+    ],
+    "no-underscore-dangle": 0
+  }
+}
